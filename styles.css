@@ -138,5 +138,6 @@ input:hover{
 }
 
 button:hover{
-    background: linear-gradient(90deg,hsl(4, 100%, 60%),var(--color-tomato));
+    background: linear-gradient(90deg,hsl(348, 100%, 66%),var(--color-tomato));
+    box-shadow: 0px 10px 10px hsla(4, 100%, 88%,0.5);
 }
