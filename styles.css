@@ -62,15 +62,30 @@ li{
     align-items: center;
 }
 
-form{
+form , .input-form{
     display: flex;
     flex-direction: column;
+}
+
+#emailText{
+    display: flex;
+
 }
 
 label{
     font-size: 12px;
     color: var(--color-dark-slate-grey);
     font-weight: 700;
+    flex: 1;
+}
+
+#error-message{
+    color: var(--color-tomato);
+    display: none;
+    flex: 1;
+    font-size: 12px;
+    font-weight: 700;
+    justify-content: flex-end;
 }
 
 form input{
@@ -82,12 +97,19 @@ form input{
     margin-bottom: 20px;
 }
 
+.error-input input{
+    border: 1px solid var(--color-tomato);
+    background-color: hsl(4, 100%, 95%);
+    color: var(--color-tomato);
+}
+
 form button{
     height: 50px;
     border-radius: 10px;
     border: none;
     background-color: var(--color-dark-slate-grey);
     color: var(--color-white);
+    font-weight: 700;
 }
 
 /*Right container*/
@@ -103,4 +125,18 @@ form button{
 #right-container img{
     height: 593px;
     width: 400px;
+}
+
+/*active states*/
+
+.active{
+    cursor: pointer;
+}
+
+input:hover{
+    border: 1px solid var(--color-dark-slate-grey);
+}
+
+button:hover{
+    background: linear-gradient(90deg,hsl(4, 100%, 60%),var(--color-tomato));
 }
