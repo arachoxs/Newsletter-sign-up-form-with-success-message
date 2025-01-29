@@ -42,9 +42,10 @@ main{
     gap: 20px;
 }
 
-#left-container h1{
+h1{
     color: var(--color-dark-slate-grey);
     font-size: 3.5rem;
+    line-height: 50px;
 }
 
 ul{
@@ -94,7 +95,6 @@ form input{
     border: 1px solid var(--color-grey);
     padding: 0 20px;
     margin-top: 10px;
-    margin-bottom: 20px;
 }
 
 .error-input input{
@@ -103,12 +103,37 @@ form input{
     color: var(--color-tomato);
 }
 
-form button{
+button{
     height: 50px;
     border-radius: 10px;
+    margin-top: 20px;
     border: none;
     background-color: var(--color-dark-slate-grey);
     color: var(--color-white);
+    font-weight: 700;
+}
+
+/*succes message*/
+
+#success-container{
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    padding: 40px;
+    width: 30%;
+    margin: 0 auto;
+    border-radius: 20px;
+    gap: 20px;
+}
+
+#success-container img{
+    width: 64px;
+    height: 64px;
+    margin-bottom: 10px
+}
+
+#email-user{
+    color: var(--color-dark-slate-grey);
     font-weight: 700;
 }
 
@@ -126,6 +151,7 @@ form button{
     height: 593px;
     width: 400px;
 }
+
 
 /*active states*/
 
