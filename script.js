@@ -6,7 +6,7 @@ function changeState (div1 , div2){
   div2.style.display = "flex";
 }
 
-dismissButton.addEventListener("click", () => {
+dismmisButton.addEventListener("click", () => {
   form.reset();
   const main = document.querySelector("main");
   const success = document.getElementById("success-container");
@@ -27,6 +27,7 @@ form.addEventListener("submit", (e) => {
     parent.querySelector("#error-message").style.display="flex";
     parent.classList.add("error-input");
   }else{
+    console.log("hol")
     parent.querySelector("#error-message").style.display="none";
     parent.classList.remove("error-input");
 
