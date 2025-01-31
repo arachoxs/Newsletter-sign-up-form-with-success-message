@@ -42,3 +42,14 @@ form.addEventListener("submit", (e) => {
 
   }
 });
+
+const img = document.querySelector("#main-img");
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth <= 400) {
+    img.src="./assets/images/illustration-sign-up-mobile.svg"
+  }else{
+    img.src="./assets/images/illustration-sign-up-desktop.svg"
+  }
+});
+
