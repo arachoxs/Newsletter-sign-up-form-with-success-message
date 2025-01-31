@@ -106,7 +106,7 @@ main{
 
 h1{
     color: var(--color-dark-slate-grey);
-    font-size: 3.5rem;
+    font-size: 3rem;
     line-height: 50px;
 }
 
